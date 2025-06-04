@@ -34,13 +34,13 @@ class SinglyLinkedList{
     //reverse()
     public void reverse(){
         Node prev=null;
-        Node current=head;
+        Node temp=head;
         Node next=null;
-        while(current!=null){
-            next=current.next;//store next
-            current.next=prev;//reverse current
-            prev=current;//prev to current
-            current=next;//current to next
+        while(temp!=null){
+            next=temp.next;//store next
+            temp.next=prev;//reverse temp
+            prev=temp;//prev to temp
+            temp=next;//temp to next
         }
         head=prev;
     }
