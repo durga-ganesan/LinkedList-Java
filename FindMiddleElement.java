@@ -1,5 +1,5 @@
 class SinglyLinkedList{
-    //class- Node
+    //Node structure
     static class Node{
         int data;//4 
         Node next;//12
@@ -23,6 +23,7 @@ class SinglyLinkedList{
             temp=temp.next;//4000->3k->2k->1k
         temp.next=newNode;
     }
+    //display()
     public void display(){
         Node temp=head;//4000-
         while(temp!=null){
@@ -30,6 +31,7 @@ class SinglyLinkedList{
             temp=temp.next;
         }System.out.print("null");
     }
+    //getMiddle()
     public int getMiddle(){
         int length=0;
         Node temp=head;
@@ -46,19 +48,19 @@ class SinglyLinkedList{
         return temp.data;
     }
 }
-    
-    
  public class FindMiddleElement{   
     public static void main(String[] args){
         SinglyLinkedList sl=new SinglyLinkedList();
+        //inserting elements
         sl.insertAtBeg(28); 
         sl.insertAtBeg(10); 
         sl.insertAtBeg(30); 
         sl.insertAtBeg(40); 
         sl.insertAtEnd(50); 
+        //Display all the elements
         sl.display();
         System.out.println();
+        //Display middle element
         System.out.println("Middle Element: "+sl.getMiddle());
-        //8->7->6->5->9->null
        }
 }
