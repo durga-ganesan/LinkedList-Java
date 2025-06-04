@@ -51,7 +51,7 @@ class SinglyLinkedList{
     }
     
 }
- public class DeleteEveryKthElement{   
+ public class DelEveryKthNode{   
     public static void main(String[] args){
         SinglyLinkedList sl=new SinglyLinkedList();
         sl.insertAtBeg(28); 
