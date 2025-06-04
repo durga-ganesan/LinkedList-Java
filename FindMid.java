@@ -48,7 +48,7 @@ class SinglyLinkedList{
         return temp.data;
     }
 }
- public class FindMiddleElement{   
+ public class FindMid{   
     public static void main(String[] args){
         SinglyLinkedList sl=new SinglyLinkedList();
         //inserting elements
